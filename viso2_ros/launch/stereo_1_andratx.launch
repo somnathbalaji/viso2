@@ -12,7 +12,7 @@
 
   <!-- Run the stereo image proc -->
   <node ns="$(arg camera)" pkg="stereo_image_proc" type="stereo_image_proc" name="stereo_image_proc" respawn="true" output="screen">
-     <rosparam file="/home/uib/turbot_ws/src/turbot_stack/cola2_turbot/config/avt_manta/disparity_params_x1.yaml"/>
+     <!-- <rosparam file="/home/uib/turbot_ws/src/turbot_stack/cola2_turbot/config/avt_manta/disparity_params_x1.yaml"/> -->
      <param name="approximate_sync" value="True" />
      <param name="queue_size" value="100" />
   </node>

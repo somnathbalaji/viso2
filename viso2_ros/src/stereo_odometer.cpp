@@ -131,6 +131,7 @@ protected:
     ros::WallTime start_time = ros::WallTime::now();
     bool first_run = false;
     // create odometer if not exists
+    ROS_INFO("Hello there") ;
     if (!visual_odometer_)
     {
       first_run = true;
@@ -347,7 +348,7 @@ int main(int argc, char **argv)
              "topic is '%s'. Are you sure the images are rectified?",
              ros::names::remap("image").c_str());
   }
-  //ROS_INFO_STREAM("MAIN");
+  ROS_INFO_STREAM("MAIN");
   std::string transport = argc > 1 ? argv[1] : "raw";
   viso2_ros::StereoOdometer odometer(transport);
 
