@@ -17,6 +17,10 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package(OpenCV REQUIRED)
+message(STATUS "OpenCV_INCLUDE_DIRS = ${OpenCV_INCLUDE_DIRS}")
+message(STATUS "OpenCV_LIB_DIR = ${OpenCV_LIB_DIR}")
+message(STATUS "OpenCV_LIBS = ${OpenCV_LIBS}")
+message(STATUS "OpenCV_LIBRARIES = ${OpenCV_LIBRARIES}")
 find_package(PCL REQUIRED)
 
 option(ARM_CROSS_COMPILATION "ARM Cross Compilation" OFF)
