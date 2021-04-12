@@ -247,6 +247,9 @@ void Matcher::matchFeatures(int32_t method, Matrix *Tr_delta) {
       refinement(p_matched_2,method);
     removeOutliers(p_matched_2,method);
   }
+
+  std::cout << "Nombre de matchings després del cercle " << p_matched_2.size() << std::endl ;
+  std::cout << "*****************************************" << std::endl ;
 }
 
 void Matcher::bucketFeatures(int32_t max_features,float bucket_width,float bucket_height) {
