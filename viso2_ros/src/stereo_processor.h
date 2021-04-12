@@ -100,7 +100,7 @@ protected:
   {
     // Read local parameters
     ros::NodeHandle local_nh("~");
-   // ROS_INFO_STREAM("Hola StereoProcessor");
+    ROS_INFO_STREAM("Hola StereoProcessor");
     // Resolve topic names
     ros::NodeHandle nh;
     std::string stereo_ns = nh.resolveName("stereo");

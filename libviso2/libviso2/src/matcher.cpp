@@ -94,7 +94,7 @@ Matcher::~Matcher() {
 /* BMNF: There are three images: New (n), Current (c) and Previous (p) (the new is passed 
 as a parameter to the function, the current and previous are already saved in the ringbuffer). 
 First, the function, stores the dimensions of n, passed by parameter to the function, within 
-local variables. Then if replace is true delete the current image. If replace is false it
+local variables. Then, if replace is true delete the current image. If replace is false it
 deletes the data from the previous image and then puts the data from the current images 
 into the variables in the previous images. Regardless of whether replace is true or false, 
 the function takes the dimensions of the new image and fills, with the relevant information,
