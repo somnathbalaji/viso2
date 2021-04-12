@@ -34,6 +34,8 @@ bool VisualOdometryStereo::process (uint8_t *I1,uint8_t *I2,int32_t* dims,bool r
   matcher->pushBack(I1,I2,dims,replace);
   if (Tr_valid) matcher->matchFeatures(2,&Tr_delta);
   else          matcher->matchFeatures(2);
+  std::cout << "Nombre de matchings després del cercle " << p_matched.size() << std::endl ;
+  std::cout << "*****************************************" << std::endl ;
   matcher->bucketFeatures(param.bucket.max_features,param.bucket.bucket_width,param.bucket.bucket_height);                          
   p_matched = matcher->getMatches();
   return updateMotion(0.0,false);
