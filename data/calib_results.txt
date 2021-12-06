@@ -16,5 +16,5 @@
 
 #image size: "height" and "width"
 
-480 640
+1024 1360
 
